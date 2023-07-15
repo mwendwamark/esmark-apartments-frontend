@@ -41,8 +41,9 @@ const Login = () => {
     <>
       <div className="login-page">
         <div className="login">
-          <h1>Login</h1>
           <div className="container">
+            {" "}
+            {/* <h1>Login</h1> */}
             <div className="top">
               <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
                 <FontAwesomeIcon icon={faGoogle} size="2x" />
