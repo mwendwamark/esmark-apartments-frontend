@@ -5,21 +5,21 @@ function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
-  const [error, setError] = useState("");
+  const [password_confirmation, setPasswordConfirmation] = useState("");
+  const [errors, setErrors] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/users", {
+    fetch("http://localhost:3000/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: name,
-        email: email,
-        password: password,
-        password_confirmation: passwordConfirmation,
+        name,
+        email,
+        password,
+        password_confirmation,
       }),
     }).then((r) => {
       if (r.ok) {
@@ -28,9 +28,10 @@ function Signup() {
           setEmail("");
           setPassword("");
           setPasswordConfirmation("");
+          setErrors([])
         });
       } else {
-        r.json().then((e) => setError(e.errors));
+        r.json().then((e) => setErrors(e.errors));
       }
     });
   }
@@ -42,6 +43,7 @@ function Signup() {
   const handleCheckboxPasswordConfirmChange = (e) => {
     setShowConfirmPassword(e.target.checked);
   };
+
   return (
     <>
       <div className="signup-page">
@@ -69,7 +71,7 @@ function Signup() {
               id="email"
               onChange={(e) => setEmail(e.target.value)}
               autoComplete="email"
-              requried
+              required
             />
 
             <label htmlFor="password">Password</label>
@@ -96,7 +98,7 @@ function Signup() {
               type={showConfirmPassword ? "text" : "password"}
               placeholder="Confirm new password"
               id="password-confirm"
-              value={passwordConfirmation}
+              value={password_confirmation}
               onChange={(e) => setPasswordConfirmation(e.target.value)}
               autoComplete="new-password"
               required
@@ -111,8 +113,10 @@ function Signup() {
               Show Password
             </label>
             <button type="submit">Signup</button>
-            <div>
-             {}
+            <div style={{ color: "red" }}>
+              {errors.map((e) => (
+                <p>{e}</p>
+              ))}
             </div>
           </form>
         </div>
@@ -120,4 +124,5 @@ function Signup() {
     </>
   );
 }
+
 export default Signup;

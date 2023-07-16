@@ -160,7 +160,7 @@ input[type="checkbox"] {
 .signup-header {
   text-align: center;
   margin: -4rem 0 0rem;
-  font-size: 48px; 
+  font-size: 48px;
   width: 100%;
 }
 .signup-container form {
@@ -194,7 +194,7 @@ input[type="checkbox"] {
 .signup-container form button:hover {
   opacity: 0.8;
 }
-.signup-checkbox-label{
+.signup-checkbox-label {
   font-weight: 300 !important;
   font-size: 15px !important;
 }
@@ -206,10 +206,20 @@ input[type="checkbox"] {
   .login-page {
     height: 100vh;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .login {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .container {
-    width: 400px !important;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
   }
   .container form label {
     font-size: 14px;
@@ -222,26 +232,34 @@ input[type="checkbox"] {
   .password-input-container label {
     font-size: 12px;
   }
+  .signup-page {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup-container {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+  }
 }
 /* =======================Tablet ============================= */
 @media screen and (min-width: 767px) and (max-width: 1023) {
   /*============================Login===============================  */
-  .login-page {
-    height: 100vh;
-    width: 100%;
-    background: red;
-  }
-  .login {
-    width: 450px;
-  }
+.signup-container,
   .container {
     min-height: calc(100vh - 100px) !important;
     max-width: 450px;
   }
+  
 }
 
 /* ==========================Laptop ======================== */
 @media screen and (min-widh: 1024px) {
+  .login-page {
+    height: 120vh;
+  }
   .login {
     width: auto;
   }

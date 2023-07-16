@@ -26,6 +26,7 @@ const Login = () => {
         r.json().then(() => {
           setEmail("");
           setPassword("");
+          setErrors([]);
         });
       } else {
         r.json().then((e) => setErrors(e.errors));
