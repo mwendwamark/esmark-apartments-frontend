@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-// import AppRoutes from "./AppRoutes";
-// import Home from "./Home";
 import Login from "./Login";
+import Signup from "./Signup";
 
 function App() {
   return (
     <>
       <Login />
+      <Signup/>
     </>
   );
 }

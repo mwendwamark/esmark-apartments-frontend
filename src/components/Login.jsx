@@ -42,8 +42,6 @@ const Login = () => {
       <div className="login-page">
         <div className="login">
           <div className="container">
-            {" "}
-            {/* <h1>Login</h1> */}
             <div className="top">
               <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
                 <FontAwesomeIcon icon={faGoogle} size="2x" />
@@ -93,6 +91,11 @@ const Login = () => {
                 </label>
               </div>
               <button type="submit">Login</button>
+              <div style={{ color: "red" }}>
+                {errors.map((e) => (
+                  <p>{e}</p>
+                ))}
+              </div>
             </form>
             <div className="bottom">
               <p>Forgot Password? </p>
@@ -100,7 +103,7 @@ const Login = () => {
             </div>
             <div className="create-account">
               <p>Dont have an account?</p>
-              <a href="/signup">Signup</a>
+              <a href="/signup">Register</a>
             </div>
           </div>
         </div>
