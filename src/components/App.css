@@ -203,7 +203,7 @@ input[type="checkbox"] {
 /* =========================Media Querries Phones==================== */
 @media screen and (max-width: 767px) {
   /* ============Login ==================== */
-  .login-page {
+  /* .login-page {
     height: 100vh;
     width: 100%;
     align-items: center;
@@ -213,10 +213,10 @@ input[type="checkbox"] {
     width: 100%;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .container {
-    max-width: 400px;
+    max-width: 350px;
     align-items: center;
     justify-content: center;
     margin-left: 2%;
@@ -238,21 +238,27 @@ input[type="checkbox"] {
     justify-content: center;
   }
   .signup-container {
-    width: 400px;
+    width: 350px;
     align-items: center;
     justify-content: center;
     margin-left: 2%;
+  }
+  .bottom {
+    display: flex !important;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center !important;
+    font-size: 0.7rem;
   }
 }
 /* =======================Tablet ============================= */
 @media screen and (min-width: 767px) and (max-width: 1023) {
   /*============================Login===============================  */
-.signup-container,
+  .signup-container,
   .container {
     min-height: calc(100vh - 100px) !important;
     max-width: 450px;
   }
-  
 }
 
 /* ==========================Laptop ======================== */
