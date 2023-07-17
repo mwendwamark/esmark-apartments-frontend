@@ -18,20 +18,29 @@
   justify-content: right;
   height: 80px;
   font-size: 20px;
-  /* padding: 0 2rem; */
   background-color: transparent !important;
   color: var(--border);
-  border-bottom: 1px solid rgb(236, 230, 230) ;
+  border-bottom: 1px solid rgb(236, 230, 230);
 }
 .Navbar-header .Navbar-h3 {
   position: absolute;
   left: 5px;
-  top: 8px;
+  top: 4px;
   font-size: 25px;
   color: var(--accent);
 }
 .Navbar-header nav {
   text-align: right;
+}
+.signup-btn {
+  background: rgb(230, 227, 227);
+  width: 90px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 40px;
+  border-radius: 4px;
 }
 
 nav a {

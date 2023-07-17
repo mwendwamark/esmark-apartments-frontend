@@ -28,9 +28,9 @@ function Navbar() {
             <h3 className="Navbar-h3">Apartments</h3>
           </Link>
           <nav ref={navRef}>
-            {/* <Link to="/">Home</Link> */}
+            <Link to="/"></Link>
             <Link to="/login">Login</Link>
-            <Link to="/signup">Signup</Link>
+            <Link to="/signup" className="signup-btn">Signup</Link>
 
             {/* <FaBars /> */}
             <FontAwesomeIcon
