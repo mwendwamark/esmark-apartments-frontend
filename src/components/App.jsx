@@ -7,8 +7,6 @@ import "./App.css";
 import Login from "./Login";
 import Signup from "./Signup";
 import LoggedInUser from "./LoggedinUser";
-import { faToggleOn } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
@@ -20,11 +18,6 @@ function App() {
     <div className="app" data-theme={theme}>
       <Router>
         <Navbar />{" "}
-        <FontAwesomeIcon
-          icon={faToggleOn}
-          className="toggle"
-          onClick={switchTheme}
-        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
