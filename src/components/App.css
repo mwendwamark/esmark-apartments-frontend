@@ -203,23 +203,11 @@ input[type="checkbox"] {
 /* =========================Media Querries Phones==================== */
 @media screen and (max-width: 767px) {
   /* ============Login ==================== */
-  /* .login-page {
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .login {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  } */
-
   .container {
-    max-width: 350px;
+    /* width: ; */
     align-items: center;
     justify-content: center;
-    margin-left: 2%;
+    /* margin-left: 1%; */
   }
   .container form label {
     font-size: 14px;
@@ -238,10 +226,10 @@ input[type="checkbox"] {
     justify-content: center;
   }
   .signup-container {
-    width: 350px;
+    width: auto;
     align-items: center;
     justify-content: center;
-    margin-left: 2%;
+    /* margin-left: %; */
   }
   .bottom {
     display: flex !important;
@@ -257,7 +245,7 @@ input[type="checkbox"] {
   .signup-container,
   .container {
     min-height: calc(100vh - 100px) !important;
-    max-width: 450px;
+    width: auto;
   }
 }
 
@@ -265,11 +253,17 @@ input[type="checkbox"] {
 @media screen and (min-widh: 1024px) {
   .login-page {
     height: 120vh;
+    margin-bottom: 120px;
   }
   .login {
     width: auto;
+    margin-top: 120px;
   }
   .container {
     margin: auto !important ;
+    /* background: red; */
+  }
+  .signup-page {
+    height: 120vh;
   }
 }
