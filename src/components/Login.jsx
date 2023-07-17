@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +13,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -27,6 +29,8 @@ const Login = () => {
           setEmail("");
           setPassword("");
           setErrors([]);
+          alert('You have successfully logged in!')
+          navigate("/me")
         });
       } else {
         r.json().then((e) => setErrors(e.errors));

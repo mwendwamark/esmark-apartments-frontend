@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 function Signup() {
@@ -9,6 +10,7 @@ function Signup() {
   const [errors, setErrors] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -28,7 +30,9 @@ function Signup() {
           setEmail("");
           setPassword("");
           setPasswordConfirmation("");
-          setErrors([])
+          setErrors([]);
+          alert(`Account created successfully!`);
+          navigate("/login")
         });
       } else {
         r.json().then((e) => setErrors(e.errors));
