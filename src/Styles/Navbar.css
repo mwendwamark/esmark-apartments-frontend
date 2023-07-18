@@ -4,14 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --background: #000;
-  --text-primary: #fff;
-  --text-secondary: #8e05c2;
-  --accent: #8e05c2;
-  --border: #808080;
-  --form-bg: #191919;
-}
+
 .Navbar-header {
   display: flex;
   align-items: center;
@@ -19,7 +12,7 @@
   height: 80px;
   font-size: 20px;
   background-color: transparent !important;
-  color: var(--border);
+  color: var(--accent);
   border-bottom: 1px solid rgb(236, 230, 230);
 }
 .Navbar-header .Navbar-h3 {

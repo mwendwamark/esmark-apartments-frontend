@@ -9,7 +9,7 @@ body {
 :root {
   --background: #fff;
   --text-primary: #000;
-  --text-secondary: #8e05c2;
+  --text-secondary: lightseagreen;
   --accent: lightseagreen;
   --border: #333;
   --form-bg: #fff;
@@ -18,7 +18,7 @@ body {
 [data-theme="dark"] {
   --background: #000;
   --text-primary: #fff;
-  --text-secondary: #8e05c2;
+  --text-secondary: lightseagreen;
   --accent: lightseagreen;
   --border: #808080;
   --form-bg: #191919;
