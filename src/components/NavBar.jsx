@@ -29,8 +29,10 @@ function Navbar() {
           </Link>
           <nav ref={navRef}>
             <Link to="/"></Link>
-            <Link to="/login">Login</Link>
-            <Link to="/signup" className="signup-btn">Signup</Link>
+            <Link to="/login"> &#128273; Login</Link>
+            <Link to="/signup" className="signup-btn">
+              Signup
+            </Link>
 
             {/* <FaBars /> */}
             <FontAwesomeIcon

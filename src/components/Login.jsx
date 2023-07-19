@@ -29,8 +29,8 @@ const Login = () => {
           setEmail("");
           setPassword("");
           setErrors([]);
-          alert('You have successfully logged in!')
-          navigate("/me")
+          alert("You have successfully logged in!");
+          navigate("/me");
         });
       } else {
         r.json().then((e) => setErrors(e.errors));
@@ -47,7 +47,7 @@ const Login = () => {
       <div className="login-page">
         <div className="login">
           <div className="container">
-            {/* <h2>Login</h2> */}
+            {/* <h1>Login</h1> */}
             <div className="top">
               <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
                 <FontAwesomeIcon icon={faGoogle} size="2x" />
@@ -97,7 +97,7 @@ const Login = () => {
                 </label>
               </div>
               <button type="submit">Login</button>
-              <div style={{ color: "red" }}>
+              <div style={{ color: "red", fontSize: "14px", padding: "10px" }}>
                 {errors.map((e) => (
                   <p>{e}</p>
                 ))}

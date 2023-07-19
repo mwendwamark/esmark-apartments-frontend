@@ -4,25 +4,24 @@
   height: 140vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-size: 0.8rem;
-  /* margin-top: 10px; */
+  margin-top: 50px;
 }
 .signup-container {
   margin-top: 20px !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 1.5rem;
-  width: 400px;
+  width: 30%;
   margin: auto;
   box-shadow: 0px 0px 15px var(--border);
   border-radius: 10px;
 }
 .signup-header {
   text-align: center;
-  margin: -4rem 0 0rem;
+  /* margin: -4rem 0 0rem !important; */
   font-size: 48px;
   width: 100%;
 }
@@ -60,4 +59,234 @@
 .signup-checkbox-label {
   font-weight: 300 !important;
   font-size: 15px !important;
+}
+/* =========================Media Querries==================== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .signup-page {
+    height: 140vh;
+    margin-top: 80px;
+    font-size: 0.6rem;
+    width: 97%;
+    margin: 5px;
+    /* justify-content: ; */
+    align-items: center;
+  }
+  .signup-container {
+    width: 99%;
+    margin: 3px;
+  }
+  .signup-header {
+    font-size: 30px;
+  }
+  .signup-container form {
+    width: 100%;
+  }
+  .signup-container form label {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  ::placeholder {
+    font-size: 11px;
+  }
+  .signup-container form input {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  .signup-container form button {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 12px 0;
+  }
+  .signup-checkbox-label {
+    font-weight: 300;
+    font-size: 12px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .signup-page {
+    height: 140vh;
+    margin-top: 80px;
+    font-size: 0.6rem;
+    width: 97%;
+    margin: 5px;
+    /* justify-content: ; */
+    align-items: center;
+  }
+  .signup-container {
+    width: 50%;
+    margin: 3px;
+  }
+  .signup-header {
+    font-size: 30px;
+  }
+  .signup-container form {
+    width: 100%;
+  }
+  .signup-container form label {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  ::placeholder {
+    font-size: 11px;
+  }
+  .signup-container form input {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .signup-container form button {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 12px 0;
+  }
+  .signup-checkbox-label {
+    font-weight: 300;
+    font-size: 12px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .signup-page {
+    height: 140vh;
+    margin-top: 80px;
+    font-size: 0.6rem;
+    width: 97%;
+    margin: 5px;
+    /* justify-content: ; */
+    align-items: center;
+  }
+  .signup-container {
+    width: 45%;
+    margin: 3px;
+  }
+  .signup-header {
+    font-size: 34px;
+  }
+  .signup-container form {
+    width: 100%;
+  }
+  .signup-container form label {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  .signup-container form input {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .signup-container form button {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 12px 0;
+  }
+  .signup-checkbox-label {
+    font-weight: 300;
+    font-size: 12px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .signup-page {
+    height: 140vh;
+    margin-top: 80px;
+    font-size: 0.6rem;
+    width: 97%;
+    margin: 5px;
+    /* justify-content: ; */
+    align-items: center;
+  }
+  .signup-container {
+    width: 35%;
+    margin: 3px;
+  }
+  .signup-header {
+    font-size: 40px;
+  }
+  .signup-container form {
+    width: 100%;
+  }
+  .signup-container form label {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  .signup-container form input {
+    padding: 11px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .signup-container form button {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 12px 0;
+  }
+  .signup-checkbox-label {
+    font-weight: 300;
+    font-size: 13px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .signup-page {
+    height: 140vh;
+    margin-top: 80px;
+    font-size: 0.6rem;
+    width: 97%;
+    margin: 5px;
+    /* justify-content: ; */
+    align-items: center;
+  }
+  .signup-container {
+    width: 35%;
+    margin: 3px;
+  }
+  .signup-header {
+    font-size: 45px;
+  }
+  .signup-container form {
+    width: 100%;
+  }
+  .signup-container form label {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+  .signup-container form input {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .signup-container form button {
+    font-weight: 500;
+    font-size: 25px;
+    margin: 12px 0;
+  }
+  .signup-checkbox-label {
+    font-weight: 300;
+    font-size: 16px !important;
+  }
 }

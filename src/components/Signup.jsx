@@ -32,7 +32,7 @@ function Signup() {
           setPasswordConfirmation("");
           setErrors([]);
           alert(`Account created successfully!`);
-          navigate("/login")
+          navigate("/login");
         });
       } else {
         r.json().then((e) => setErrors(e.errors));
@@ -117,7 +117,7 @@ function Signup() {
               Show Password
             </label>
             <button type="submit">Signup</button>
-            <div style={{ color: "red" }}>
+            <div style={{ color: "red", fontSize: "14px", padding: "10px" }}>
               {errors.map((e) => (
                 <p>{e}</p>
               ))}
