@@ -1,5 +1,5 @@
 .home-container {
-  height: 100vh;
+  height: 128vh;
 }
 .Home-header {
   margin-top: 10vh;
@@ -41,6 +41,9 @@
   background: lightseagreen;
   color: var(--background);
   cursor: pointer;
+}
+.arrow-icon{
+  margin-left: 10px;
 }
 .home-container button:hover{
   background: transparent;

@@ -33,7 +33,7 @@ function Home() {
           <Link to="/login">
             <button>
               Get Started
-              <FontAwesomeIcon icon={faArrowRight} />{" "}
+              <FontAwesomeIcon icon={faArrowRight} className="arrow-icon"/>{" "}
             </button>
           </Link>
         </header>
