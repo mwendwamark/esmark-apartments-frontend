@@ -9,6 +9,7 @@ import {
   faDiscord,
   faInstagram,
   faTelegram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight, faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,7 +34,10 @@ function Home() {
           <Link to="/login">
             <button>
               Get Started
-              <FontAwesomeIcon icon={faArrowRight} className="arrow-icon"/>{" "}
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="arrow-icon"
+              />{" "}
             </button>
           </Link>
         </header>
@@ -61,23 +65,29 @@ function Home() {
             <a href="/privacy-policy">Privacy Policy</a>
             <a href="/conditions">Terms and Contitions</a>
             <a href="/houses">Houses</a>
-          </div>
+          </div>{" "}
           <div className="social-icons">
-            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
-            <a href="https://www.facebook.com/login">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
-            </a>
-            <a href="https://github.com/login">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a href="">
-              <FontAwesomeIcon icon={faDiscord} size="2x" />
-            </a>
-            <a href="">
-              <FontAwesomeIcon icon={faTelegram} size="2x" />
-            </a>
+            <h3>Find us on</h3>
+            <div className="social-links">
+              <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a href="https://www.facebook.com/login">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href="https://github.com/login">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faDiscord} size="2x" />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faTelegram} size="2x" />
+              </a>
+            </div>
           </div>
           <div className="made-with-love">
             <p>&copy; 2023 Esmark Apartments | All rights reserved.</p>

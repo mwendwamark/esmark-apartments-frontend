@@ -4,7 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .Navbar-header {
   display: flex;
   align-items: center;
@@ -34,6 +33,10 @@
   text-align: center;
   height: 40px;
   border-radius: 4px;
+  font-size: 16px;
+}
+.login-btn {
+  font-size: 16px;
 }
 
 nav a {

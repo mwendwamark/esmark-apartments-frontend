@@ -5,7 +5,7 @@ function LoggedInUser() {
 
   useEffect(() => {
     // Make a fetch request to get the user data from the server
-    fetch("http://localhost:3000/users")
+    fetch("http://localhost:3000/me")
       .then((res) => res.json())
       .then((data) => {
         // Assuming the server returns an object with the name property

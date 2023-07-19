@@ -29,7 +29,7 @@ function Navbar() {
           </Link>
           <nav ref={navRef}>
             <Link to="/"></Link>
-            <Link to="/login"> &#128273; Login</Link>
+            <Link to="/login" className="login-btn"> &#128273; Login</Link>
             <Link to="/signup" className="signup-btn">
               Signup
             </Link>
